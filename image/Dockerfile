@@ -9,7 +9,7 @@
 # software components inside the image are under the respective
 # licenses chosen by their respective copyright holders.
 #
-FROM ubuntu:22.10
+FROM ubuntu:23.10
 MAINTAINER Thomas Weise <tweise@hfuu.edu.cn>
 
 ENV LANG=C.UTF-8
@@ -100,7 +100,7 @@ RUN echo "Using chinese apt mirror, because otherwise I cannot build this image 
     echo "Initializing user tree." &&\
     tlmgr init-usertree &&\
     echo "tlmgr init-usertree done successfully" &&\
-### adapt and comment in the lines below if we need to use an older repository 
+### adapt and comment in the lines below if we need to use an older repository
 #   echo "Using TeXLive 2021 repository." &&\
 #   tlmgr repository add ftp://tug.org/historic/systems/texlive/2021/tlnet-final &&\
 #   tlmgr repository list &&\
